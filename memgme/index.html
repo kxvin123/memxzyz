@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Memory Game with HTML5 CSS3 and JS" />
+    <meta name="keywords" content="Memory , Game , HTML5 , CSS3 , JS" />
+    <meta name="author" content="Khazri" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <title>Memory Game</title>
+    <!--CDN Fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--CDN Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Link CSS-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="content-start">
+        <button><i class="fa-solid fa-play"></i> start play</button>
+      </div>
+      <h1><i class="fa-solid fa-brain"></i> memory game made by kevin</h1>
+      <section class="memory-game">
+        <section class="info-memory-game">
+          <div class="player">
+            <i class="fa-solid fa-dice-three"></i>
+            <p>Name : <span>Player</span></p>
+          </div>
+          <div class="timer">
+            <i class="fa-solid fa-hourglass-start"></i>
+            <p>Timer : <span> 01min</span></p>
+          </div>
+          <div class="tries">
+            <i class="fa-solid fa-sliders"></i>
+            <p>Tries : <span>00</span>/ 15</p>
+          </div>
+          <div class="restart">
+            <i class="fa-sharp fa-solid fa-rotate-right"></i>
+          </div>
+        </section>
+
+        <section class="content-memory-game">
+          <div class="cards">
+            <div class="card" data-anime="Takashi">
+              <div class="face im1"></div>
+              <div class="back">
+                <i class="fa-solid fa-circle-radiation fa-5x"></i>
+              </div>
+            </div>
+            <div class="card" data-anime="Takashi">
+              <div class="face im1"></div>
+              <div class="back">
+                <i class="fa-solid fa-circle-radiation fa-5x"></i>
+              </div>
+            </div>
+            <div class="card" data-anime="Naruto">
+              <div class="face im2"></div>
+              <div class="back">
+                <i class="fa-solid fa-circle-radiation fa-5x"></i>
+              </div>
+            </div>
+            <div class="card" data-anime="Naruto">
+              <div class="face im2"></div>
+              <div class="back">
+                <i class="fa-solid fa-circle-radiation fa-5x"></i>
+              </div>
+            </div>
+            <div class="card" data-anime="Gara">
+              <div class="face im3"></div>
+              <div class="back">
+                <i class="fa-solid fa-circle-radiation fa-5x"></i>
+              </div>
+            </div>
+            <div class="card" data-anime="Gara">
+              <div class="face im3"></div>
+              <div class="back">
+                <i class="fa-solid fa-circle-radiation fa-5x"></i>
+              </div>
+            </div>
+            <div class="card" data-anime="Hinat">
+              <div class="face im4"></div>
+              <div class="back">
+                <i class="fa-solid fa-circle-radiation fa-5x"></i>
+              </div>
+            </div>
+            <div class="card" data-anime="Hinat">
+              <div class="face im4"></div>
+              <div class="back">
+                <i class="fa-solid fa-circle-radiation fa-5x"></i>
+              </div>
+            </div>
+            <div class="card" data-anime="Saski">
+              <div class="face im5"></div>
+              <div class="back">
+                <i class="fa-solid fa-circle-radiation fa-5x"></i>
+              </div>
+            </div>
+            <div class="card" data-anime="Saski">
+              <div class="face im5"></div>
+              <div class="back">
+                <i class="fa-solid fa-circle-radiation fa-5x"></i>
+              </div>
+            </div>
+            <div class="card" data-anime="Sakura">
+              <div class="face im6"></div>
+              <div class="back">
+                <i class="fa-solid fa-circle-radiation fa-5x"></i>
+              </div>
+            </div>
+            <div class="card" data-anime="Sakura">
+              <div class="face im6"></div>
+              <div class="back">
+                <i class="fa-solid fa-circle-radiation fa-5x"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!--Audios-->
+      <audio src="audios/yes.wav" preload="auto" id="same"></audio>
+      <audio src="audios/wrong.mp3.wav" preload="auto" id="different"></audio>
+      <audio
+        src="audios/bg.mp3"
+        preload="auto"
+        id="back-naruto-song"
+      ></audio>
+      <audio src="audios/wrong.mp3.wav" preload="auto" id="lose"></audio>
+      <audio src="audios/Untitled.wav" preload="auto" id="win"></audio>
+    </main>
+    <!--Link JS-->
+    <script src="main.js"></script>
+  </body>
+</html>
